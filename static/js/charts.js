@@ -31,7 +31,7 @@ function optionChanged(firstSample) {
 
 // Demographics Panel 
 function buildMetadata(sample) {
-  d3.json("../Beely_Button_Biodiversity/samples.json").then((data) => {
+  d3.json("../Belly_Button_Biodiversity/samples.json").then((data) => {
     var metadata = data.metadata;
     // Filter the data for the object with the desired sample number
     var resultArray = metadata.filter(sampleObj => sampleObj.id == sample);
